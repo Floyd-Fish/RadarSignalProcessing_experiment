@@ -87,7 +87,7 @@ XDEN = wdenoise(X, LEVEL)
 
 在这里使用默认的小波，即sym4小波。synN小波也被称为`Daubechies最小非对称小波`。
 
-![symlet](./image/symlet Wavelet.gif)
+![symlet](./image/symlet_wavelet.jpg)
 
 使用贝叶斯降噪规则，该方法使用了一个阈值规则，该规则假设测量值具有独立的先验分布，由混合模型给出。因为在混合模型中，测量用于估计权重，所以这种方法对于更多的样本更有效。默认情况下，使用后验中值规则来评估风险。噪声估计规则使用`LevelIndependent`规则，即**基于最小尺度（最高分辨率）小波系数估计噪声的方差**。
 
@@ -112,8 +112,6 @@ bpsk_n_f = wdenoise(bpsk_n,9 ,'NoiseEstimate','LevelInDependent');
 ![10](./image/10.jpg)
 
 可以看出，低通滤波法直接将高频段信号全部衰减，无法保留信号的高频信息。而小波变换降噪可以较为完好地保存原始信号中的高频信息。
-
-
 
 接下来使用小波降噪对加噪BPSK调制信号降噪，并对比降噪效果。下图中从上到下分别为加噪BPSK信号、加噪BPSK信号的频谱、小波降噪后的BPSK信号、小波降噪后的BPSK信号的频谱。
 
@@ -153,24 +151,3 @@ bpsk_n_f = wdenoise(bpsk_n,9 ,'NoiseEstimate','LevelInDependent');
 [Matlab - 数字滤波器设计实践](https://ww2.mathworks.cn/help/signal/ug/practical-introduction-to-digital-filter-design.html)
 
 [Matlab - Wavelet Denoising](https://ww2.mathworks.cn/help/dsp/ug/wavelet-denoising.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

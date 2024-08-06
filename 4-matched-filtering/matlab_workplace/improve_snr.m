@@ -64,13 +64,3 @@ ylabel('Amplitude')
 hold on
 plot([tgtrng, tgtrng], [0 max(abs(mf_puls))],'r')
 hold off
-
-
-
-
-
-
-
-
-
-

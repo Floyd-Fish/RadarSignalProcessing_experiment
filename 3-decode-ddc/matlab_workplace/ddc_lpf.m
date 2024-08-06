@@ -111,8 +111,8 @@ xlabel('time / ms'); ylabel('Amplitude / V');
 
 sRBaseQ = resample(sBaseQ, rfs, fs);
 sRBaseI = resample(sBaseI, rfs, fs);
-corrQ = corrcoef(sRBaseQ, deBaseQ)
-corrI = corrcoef(sRBaseI, deBaseI)
+corrQ = corrcoef(sRBaseQ, deBaseQ);
+corrI = corrcoef(sRBaseI, deBaseI);
 
 figure;
 subplot(2, 1, 1);

@@ -119,4 +119,3 @@ $$
 [Basics of Digital Down-Conversion in DSP](https://www.allaboutcircuits.com/technical-articles/dsp-basics-of-digital-down-conversion-digital-signal-processing/)
 
 [The Polyphase Implementation of Interpolation Filters in Digital Signal Processing](https://www.allaboutcircuits.com/technical-articles/digital-signal-processing-polyphase-implementation-interpolation-filter-dsp/)
-

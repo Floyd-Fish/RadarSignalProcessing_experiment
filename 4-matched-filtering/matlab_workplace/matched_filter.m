@@ -57,4 +57,3 @@ ylabel('Magnitude')
 xlabel('Seconds')
 legend('No Spectrum Weighting','Taylor Window', 'Hamming Window', 'Kaiser Window')
 hold off
-
